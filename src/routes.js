@@ -49,8 +49,10 @@ router.beforeEach((to,from ,next)=>{
     // need to login
     if(!store.user){
       next({
-        name:""
+        name:"login"
       })
+    }else{
+      next()
     }
   }else{
     next()

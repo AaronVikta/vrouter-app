@@ -10,7 +10,7 @@
         <input type="text" v-model="password">
       </div>
       <div class="">
-        <button@click="login" class="btn">Login</button>
+        <button @click="login" class="btn">Login</button>
       </div>
     </div>
   </div>
@@ -40,5 +40,6 @@ export default {
   flex-direction: column;
   max-width: 400px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 </style>
