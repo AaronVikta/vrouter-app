@@ -2,7 +2,7 @@
   <div id="app">
     <Navigation/>
     <router-view/>
-    
+
     </div>
 </template>
 
@@ -23,5 +23,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.input{
+  border:1px solid green;
+  padding:10px;
+  margin-bottom:20px;
+}
+
+.btn{
+  background-color: green;
+  padding:10px;
+  color:white;
 }
 </style>

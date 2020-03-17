@@ -1,11 +1,15 @@
 <template>
 <div class="">
-  <p>Hello {{$route.params.name}}</p>
+  <p>Hello {{name}}</p>
 </div>
 </template>
 
 <script>
 export default {
+  props:['name'],
+  created(){
+    console.log(`Hello ${this.name}`);
+  }
 }
 </script>
 
