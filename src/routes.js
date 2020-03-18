@@ -47,6 +47,8 @@ export const router = new VueRouter({
 router.beforeEach((to,from ,next)=>{
   if(to.meta.requiresAuth){
     // need to login
+    console.log(`Route to`,to);
+    console.log(`Route from`, from);
     if(!store.user){
       next({
         name:"login"

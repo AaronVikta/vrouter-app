@@ -28,7 +28,7 @@ export default {
   methods:{
     login(){
       store.user =this.username
-      this.$router.push("/profile")
+      this.$router.push("/user")
     }
   }
 }
